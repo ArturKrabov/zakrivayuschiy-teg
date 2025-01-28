@@ -14,52 +14,51 @@
 */
 
 .theme-menu__button:disabled::before {
-    animation: arrow 0.5s infinite ease-in-out alternate;
-  }
+  animation: arrow 0.5s infinite ease-in-out alternate;
+}
 
 .is-liked .like-icon__heart {
-    animation-name: scaling;
-    animation-duration: 0.3s;
-    animation-delay: 0.1s;
-    animation-timing-function: ease-in;
-    animation-direction: alternate;
-    transform-origin: center;
-  }
+  animation-name: scaling;
+  animation-duration: 0.3s;
+  animation-delay: 0.1s;
+  animation-timing-function: ease-in;
+  animation-direction: alternate;
+  transform-origin: center;
+}
 
 .is-liked .like-icon__sparks {
-    animation-name: sparks;
-    animation-duration: 0.3s;
-    animation-delay: 0.3s;
-    animation-timing-function: ease-in;
-    animation-direction: alternate;
-    transform-origin: center;
-  }
-
+  animation-name: sparks;
+  animation-duration: 0.3s;
+  animation-delay: 0.3s;
+  animation-timing-function: ease-in;
+  animation-direction: alternate;
+  transform-origin: center;
+}
 
 @keyframes scaling {
-    from {
-      transform: scale(1);
-    }
-  
-    to {
-      transform: scale(1.5);
-    }
+  from {
+    transform: scale(1);
   }
-  
-  @keyframes arrow {
-    from {
-      left: -15px;
-    }
-    to {
-      left: -11px;
-    }
+
+  to {
+    transform: scale(1.5);
   }
-  
-  @keyframes sparks {
-    from{
-      opacity: 0;
+}
+
+@keyframes arrow {
+  from {
+    left: -15px;
   }
-  to{
-      opacity: 1;
+  to {
+    left: -11px;
   }
+}
+
+@keyframes sparks {
+  from {
+    opacity: 0;
   }
+  to {
+    opacity: 1;
+  }
+}
