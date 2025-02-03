@@ -468,6 +468,17 @@
   text-transform: uppercase;
 }
 
+@supports (
+  (text-stroke: 1px var(--background-color)) or
+    (-webkit-text-stroke: 1px var(--background-color))
+) {
+  .wrapper-image {
+    -webkit-text-stroke: 1px var(--background-color);
+    text-stroke: 1px var(--background-color);
+    text-shadow: none;
+  }
+}
+
 @media (max-width: 640px) {
   :root {
     --content-size: 100vw;
