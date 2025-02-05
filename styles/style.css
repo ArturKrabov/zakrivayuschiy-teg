@@ -40,6 +40,7 @@
     );
   background-size: cover;
   background-attachment: fixed;
+  font-variation-settings: "wgth" var(--main-font-weight);
 }
 
 .image-1 {
